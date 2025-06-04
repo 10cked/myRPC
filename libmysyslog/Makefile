@@ -25,7 +25,7 @@ $(SHARED): $(OBJ)
 
 deb:
 	mkdir -p MySyslog_library_$(version)-$(revision)_$(architecture)/DEBIAN
-	printf "Package: libmysyslog\nVersion: $(version)\nArchitecture: $(architecture)\nMaintainer: gandc <admin@gandc.ru>\nDescription: Core library for mysyslog logging\n" \
+	printf "Package: libmysyslog\nVersion: $(version)\nArchitecture: $(architecture)\nMaintainer: F1uck3r <f1uck3r@gandc.ru>\nDescription: Core library for mysyslog logging\n" \
 		> MySyslog_library_$(version)-$(revision)_$(architecture)/DEBIAN/control
 	mkdir -p MySyslog_library_$(version)-$(revision)_$(architecture)/usr/local/lib
 	mkdir -p MySyslog_library_$(version)-$(revision)_$(architecture)/usr/local/include
