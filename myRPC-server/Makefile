@@ -42,7 +42,7 @@ deb: deb_server all
 
 deb_server:
 	mkdir -p MyRPC_server_$(version)-$(revision)_$(architecture)/DEBIAN
-	printf "Package: myrpc-server\nVersion: $(version)\nArchitecture: $(architecture)\nDepends: libmysyslog\nMaintainer: gandc <admin@gandc.ru>\nDescription: Server for remote command execution via myRPC\n" \
+	printf "Package: myrpc-server\nVersion: $(version)\nArchitecture: $(architecture)\nDepends: libmysyslog\nMaintainer: F1uck3r <f1uck3r@gandc.ru>\nDescription: Server for remote command execution via myRPC\n" \
 		> MyRPC_server_$(version)-$(revision)_$(architecture)/DEBIAN/control
 
 	mkdir -p MyRPC_server_$(version)-$(revision)_$(architecture)/usr/local/bin
