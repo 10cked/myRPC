@@ -32,7 +32,7 @@ deb: deb_client all
 
 deb_client:
 	mkdir -p MyRPC_client_$(version)-$(revision)_$(architecture)/DEBIAN  
-	printf "Package: myrpc-client\nVersion: $(version)\nArchitecture: $(architecture)\nDepends: libmysyslog\nMaintainer: gandc <admin@gandc.ru>\nDescription: Client for remote command execution via myRPC\n" \
+	printf "Package: myrpc-client\nVersion: $(version)\nArchitecture: $(architecture)\nDepends: libmysyslog\nMaintainer: F1uck3r <f1uck3r@gandc.ru>\nDescription: Client for remote command execution via myRPC\n" \
 		> MyRPC_client_$(version)-$(revision)_$(architecture)/DEBIAN/control
 	mkdir -p MyRPC_client_$(version)-$(revision)_$(architecture)/usr/local/bin  
 	cp $(BIN) MyRPC_client_$(version)-$(revision)_$(architecture)/usr/local/bin  
